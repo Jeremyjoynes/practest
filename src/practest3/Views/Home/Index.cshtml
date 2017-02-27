@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h3>Our data goes here</h3>
+<table ng-controller="HomeController as vm">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="player in vm.players">
+            <td>{{player.firstName}}</td>
+            <td>{{player.number}}</td>
+        </tr>
+    </tbody>
+</table>
